@@ -1,3 +1,5 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/aded046d-b4af-4ff2-8895-b82fc3734af3/deploy-status)](https://app.netlify.com/sites/unifacef-react-iago/deploys)
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
