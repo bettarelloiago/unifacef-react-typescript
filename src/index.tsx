@@ -15,6 +15,7 @@ import { createBrowserHistory } from 'history';
 import { syncHistoryWithStore} from 'mobx-react-router';
 import { router } from './mobx';
 
+
 const rootElement = document.getElementById('root');
 const browserHistory = createBrowserHistory();
 const history = syncHistoryWithStore(browserHistory, router);
