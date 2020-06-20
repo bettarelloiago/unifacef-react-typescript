@@ -12,5 +12,6 @@ axios.interceptors.response.use((config) => {
     loadingOff();
     return config;
 }, (error) => {
+    loadingOff();
     return Promise.reject(error);
 });
