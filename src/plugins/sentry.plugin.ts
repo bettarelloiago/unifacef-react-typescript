@@ -1,4 +1,5 @@
 import { configureScope, init } from '@sentry/browser';
+import { configs } from '../configs';
 
 (() => {
 
@@ -6,9 +7,9 @@ import { configureScope, init } from '@sentry/browser';
         return;
     }
 
-    const { REACT_APP_SENTRY_SDN } = process.env;
+    const { sentry } = configs;
 
-    init({dsn: REACT_APP_SENTRY_SDN});
+    init({dsn: sentry});
 
     configureScope(scope => {
     });
