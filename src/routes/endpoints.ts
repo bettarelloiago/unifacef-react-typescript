@@ -8,6 +8,7 @@ import Cache from '../containers/cache';
 import Tags from '../containers/tags';
 import Register from "../containers/register";
 import Corona from "../containers/corona";
+import Login from '../containers/login';
 
 const publicUrl = process.env.PUBLIC_URL;
 
@@ -16,7 +17,6 @@ interface EndPointsProps extends RouteProps {
 }
 
 export const endpoints: EndPointsProps[] = [
-  { path: `${publicUrl}/`, component: Home, exact: true },
   { path: `${publicUrl}/home`, name: 'Home', component: Home, exact: true },
   { path: `${publicUrl}/combustivel`, name: 'Combustível', component: Combustivel, exact: true },
   { path: `${publicUrl}/star-wars`, name: 'Star Wars', component: StarWars, exact: true },
@@ -26,4 +26,10 @@ export const endpoints: EndPointsProps[] = [
   { path: `${publicUrl}/register`, name: 'Register', component: Register, exact: true },
   { path: `${publicUrl}/corona`, name: 'Corona', component: Corona, exact: true },
   { path: `${publicUrl}/sobre`, name: 'Sobre', component: Sobre, exact: true },
+];
+
+export const loginEndpoints: EndPointsProps[] = [
+  { path: `${publicUrl}/`, component: Login, exact: true },
+  { path: `${publicUrl}/logout`, component: Login, exact: true },
+  { path: `${publicUrl}/login`, component: Login, exact: true },
 ];
