@@ -3,7 +3,7 @@ import { assign } from '../../utils/object.util';
 
 export default class RegisterStore {
     @observable zipCode?: number;
-    @observable guthub?: string;
+    @observable github?: string;
 
     @action handleForm = (event: any, select?: any) => {
         const { name, value } = select || event.target;
